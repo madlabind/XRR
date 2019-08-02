@@ -2,7 +2,7 @@ let db_config = {
   host : 'localhost',
   user : 'imran',
   password : 'developer',
-  database : 'nodelearning'
+  database : 'imran'
 };
 
 module.exports=db_config;
