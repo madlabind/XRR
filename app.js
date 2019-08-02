@@ -13,13 +13,8 @@ const users = require('./routes/users');
 app.use('/',routes);
 app.use('/users',users);
 
-const db = mysql.createConnection({
-  host : 'localhost',
-  user : 'imran',
-  password : 'developer',
-  database : 'nodelearning'
-});
-
+const db_config = require('./services/config');
+const db = mysql.createConnection(db_config);
 db.connect((err) => {
   if(err){
     throw error;
